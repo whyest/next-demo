@@ -12,10 +12,7 @@ const Navbar = () => {
     <nav className="bg-base-300 py-4">
       <div className="navbar mx-auto max-w-6xl flex-col  px-8 sm:flex-row">
         <li className="sm:mr-auto">
-          <Link
-            href="https://nextjs.org"
-            className="btn btn-outline btn-accent px-10"
-          >
+          <Link href="/" className="btn btn-outline btn-accent px-10">
             Next.js
           </Link>
         </li>

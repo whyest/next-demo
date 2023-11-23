@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className='px-8 py-20 max-w-6xl mx-auto'>
-      <h1 className='text-6xl'>Home page</h1>
-      <Link href='/about'>about page</Link>
-      <Link href='/contact'>contact page</Link>
+    <main className="mx-auto max-w-6xl px-8 py-20">
+      <h1 className="text-6xl">Home page</h1>
+      <p className="text-md pt-3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+        adipisci illum sapiente soluta molestiae laboriosam vel enim ducimus
+        dolorem laudantium!
+      </p>
     </main>
-  )
+  );
 }
