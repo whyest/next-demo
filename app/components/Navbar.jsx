@@ -1,37 +1,37 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const links = [
-  { href: '/client', label: 'client' },
-  { href: '/drinks', label: 'drinks' },
-  { href: '/tasks', label: 'tasks' },
-  { href: '/query', label: 'react-query' },
-]
+  { href: "/client", label: "client" },
+  { href: "/drinks", label: "drinks" },
+  { href: "/tasks", label: "tasks" },
+  { href: "/query", label: "react-query" },
+];
 
 const Navbar = () => {
   return (
-    <nav className='bg-base-300 py-4'>
-      <div className='navbar px-8 max-w-6xl mx-auto flex-col sm:flex-row'>
-        <li className='sm:mr-auto'>
+    <nav className="bg-base-300 py-4">
+      <div className="navbar mx-auto max-w-6xl flex-col  px-8 sm:flex-row">
+        <li className="sm:mr-auto">
           <Link
-            href='https://nextjs.org'
-            className='btn btn-accent btn-outline px-10'
+            href="https://nextjs.org"
+            className="btn btn-outline btn-accent px-10"
           >
             Next.js
           </Link>
         </li>
-        <ul className='menu menu-horizontal sm:ml-8'>
+        <ul className="menu menu-horizontal sm:ml-8">
           {links.map((link) => {
             return (
               <li key={link.href}>
-                <Link href={`/${link.href}`} className='capitalize'>
+                <Link href={link.href} className="capitalize">
                   {link.label}
                 </Link>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+export default Navbar;
