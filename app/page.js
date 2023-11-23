@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,6 +9,9 @@ export default function Home() {
         adipisci illum sapiente soluta molestiae laboriosam vel enim ducimus
         dolorem laudantium!
       </p>
+      <Link href="/client" className="btn btn-accent mt-3 px-6 capitalize">
+        get started
+      </Link>
     </main>
   );
 }
